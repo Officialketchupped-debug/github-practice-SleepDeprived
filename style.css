@@ -129,12 +129,11 @@ section
 }
 
 .contact-form {
-  background-color: white;
+  background-color: rgb(154, 235, 135);
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   width: 350px;
-=======
 }
 
 nav ul
@@ -168,3 +167,4 @@ section
     color: white;
     padding:  10%;
 }
+
