@@ -21,11 +21,3 @@ toggle.addEventListener('click', function(){
         body.style.transition = '2s';
     }
 });
-
-window.addEventListener("DOMContentLoaded", () => {
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("footer-placeholder").innerHTML = data;
-    });
-});
