@@ -22,34 +22,51 @@ body {
     background-attachment: fixed;
     color: #00ffcc; 
     font-family: monospace; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-nav
-{
+main {
+  flex: 1;
+  padding-top: 200px;
+  color: white;
+  align-self: center;
+  text-align: center;
+}
+
+nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+     height: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
     align-items: center;
-    padding: 30px 150px;
-    background-color: rgba(0, 0, 0, 0.897);
+    padding: 0 20px;     
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
     z-index: 1000;
 }
 
-nav ul
-{
-    display: flex;
-    justify-content: center;
-    gap: 5em;
-    margin-right: 25em;
-    list-style: none;
+nav > a {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
 }
 
-nav ul a
-{
+nav ul {
+    display: flex;
+    gap: 2.5em; 
+    margin: 0;       
+    padding: 0;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul a {
     color: white;
     padding: 5px 15px;
     border-radius: 5px;
@@ -58,11 +75,8 @@ nav ul a
     text-decoration: none;
 }
 
-nav > a
-{
-    font-size: 32px;
-    color: white;
-    text-decoration: none;
+nav ul a:hover {
+    background-color: rgba(255,255,255,0.1);
 }
 
 section
@@ -168,3 +182,30 @@ section
     padding:  10%;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+footer p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #1e90ff;
+}
