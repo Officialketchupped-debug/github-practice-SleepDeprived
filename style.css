@@ -168,3 +168,32 @@ section
     padding:  10%;
 }
 
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.897);
+}
+
+.social-links a {
+  position: relative;
+  top: 8px;
+  margin: 0 10px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#footer-placeholder {
+  margin-top: auto;
+}
